@@ -1,0 +1,18 @@
+[
+  {
+    "model": "mysite.Blog",
+    "pk": 1,
+    "fields": {
+      "title": "John",
+      "content": "Lennon"
+    }
+  },
+  {
+    "model": "mysite.Blog",
+    "pk": 2,
+    "fields": {
+      "title": "Paul",
+      "content": "McCartney"
+    }
+  }
+]

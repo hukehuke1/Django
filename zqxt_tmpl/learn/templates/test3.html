@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>欢迎光临</title>
+</head>
+<body>
+
+{{score}}
+
+{% if score >= 90 %}
+成绩优秀，自强学堂你没少去吧！学得不错
+{% elif score >= 80 %}
+成绩良好
+{% elif score >= 70 %}
+成绩一般
+{% elif score >= 60 %}
+需要努力
+{% else %}
+不及格啊，大哥！多去自强学堂学习啊！
+{% endif %}
+{{ request.path }}
+{{ request.user }}
+{% if request.user.is_authenticated %}
+    {{ request.user.username }}，您好！
+{% else %}
+    请登陆，这里放登陆链接
+{% endif %}
+</html>

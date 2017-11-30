@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+ 
+{% block title %}欢迎光临首页 {% endblock %}
+
+{% block content %}
+这里是首页home.html，欢迎光临 {% for i in TutorialList %}
+{{ i }}
+{% endfor %}}
+{% endblock %}

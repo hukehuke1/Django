@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>欢迎光临</title>
+</head>
+<body>
+欢迎光临珂珂测试网页——templates test2
+{% for item in List %}
+    {{ item }}{% if not forloop.last %}, {% endif %}
+    <!--这里是用if判断是否是最后一个，如果是最后一个就不加，-->
+    {% empty %}
+    	<li>抱歉，列表为空</li><>
+{% endfor %}
+{% url 'add' 4 5 %}
+</body>
+</html>
